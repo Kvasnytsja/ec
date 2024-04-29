@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  @apply flex justify-center items-center relative h-full w-full gap-x-8 gap-y-8 pt-4;
+}
+.container {
+  @apply absolute max-w-screen-md top-52  flex justify-center items-center;
+}
+.traffic-light-vertical {
+  @apply flex justify-center items-center;
+}
+.traffic-light-horizontal {
+  @apply flex items-center flex-col transform rotate-[-90deg];
+}
+.traffic-light-container {
+  @apply min-h-16 border border-spacing-1  rounded-2xl bg-transparent flex items-center flex-col p-4 mb-28 gap-4 text-center text-black;
+}
+.traffic-light {
+  @apply bg-gray-300 h-[100px] w-[100px] rounded-full flex justify-center items-center cursor-pointer;
+}
+.traffic-light-pedestrian {
+  @apply flex flex-row gap-[500px] items-center;
+}
+.navbar {
+  @apply relative right-1 flex font-sans font-semibold text-lg gap-6;
+}
+.home {
+  @apply flex flex-col items-center justify-center gap-5 absolute right-28 top-5;
+}
+
+.button{
+  @apply absolute bottom-28 right-[600px] 
+}
+
+.btn {
+  @apply max-h-max min-w-max bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded;
+  &[disabled] {
+    @apply opacity-50 cursor-not-allowed;
+  }
+}

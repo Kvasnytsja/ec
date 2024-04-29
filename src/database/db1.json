@@ -1,0 +1,14 @@
+{
+  "trafficLight": [
+    {
+      "id": 1,
+      "type": "pedestrian",
+      "color": "red"
+    },
+    {
+      "id": 2,
+      "type": "car",
+      "color": "green"
+    }
+  ]
+}
